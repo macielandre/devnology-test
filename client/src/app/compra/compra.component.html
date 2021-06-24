@@ -1,0 +1,31 @@
+<div class="view">
+    <form [formGroup]="formCliente">
+        <div class="form-group">
+            <p>Compra veículo</p>
+            <input type="text" id="modelo" name="modelo" formControlName="modelo" class="form-control" placeholder="Modelo"><br>
+        </div>
+        <div class="form-group">
+            <input type="text" id="marca" name="marca" formControlName="marca" class="form-control" placeholder="Marca"><br>
+        </div>
+        <div class="form-group">
+            <input type="text" id="ano_fabricacao" name="ano_fabricacao" formControlName="ano_fabricacao" class="form-control" placeholder="Ano de fabricação"><br>
+        </div>
+        <div class="form-group">
+            <input type="text" id="placa" name="placa" formControlName="placa" class="form-control" placeholder="Placa"><br>
+        </div>
+        <div class="form-group">
+            <input type="text" id="cor" name="cor" formControlName="cor" class="form-control" placeholder="Cor"><br>
+        </div>
+        <div class="form-group">
+            <input type="text" id="chassi" name="chassi" formControlName="chassi" class="form-control" placeholder="Chassi"><br>
+        </div>
+        <div class="form-group">
+            <input type="date" id="data_compra" name="data_compra" formControlName="data_compra" class="form-control" placeholder="Data da compra"><br>
+        </div>
+        <div class="form-group">
+            <input type="text" id="valor_compra" name="valor_compra" formControlName="valor_compra" class="form-control" placeholder="Valor da compra"><br>
+        </div>
+        <input type="submit" class="btn btn-primary mt-4" value="Enviar" (click)=onSubmit()>
+        <input type="submit" class="btn btn-secondary mt-4 ml-2" value="Cancelar" [routerLink]="['/']">
+    </form>
+</div>

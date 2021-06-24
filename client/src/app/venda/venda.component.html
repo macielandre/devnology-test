@@ -1,0 +1,16 @@
+<div class="view">
+    <form [formGroup]="formVendedor">
+        <div class="form-group">
+            <p>Venda veículo</p>
+            <input type="date" id="data_venda" name="data_venda" formControlName="data_venda" class="form-control" placeholder="Data venda"><br>
+        </div>
+        <div class="form-group">
+            <input type="text" id="valor_venda" name="valor_venda" formControlName="valor_venda" class="form-control" placeholder="Valor venda"><br>
+        </div>
+        <div class="form-group">
+            <input type="text" id="comissao" name="comissao" formControlName="comissao" class="form-control" placeholder="Comissão vendedor"><br>
+        </div>
+        <input type="submit" class="btn btn-primary mt-4" value="Enviar" (click)=onSubmit()>
+        <input type="submit" class="btn btn-secondary mt-4 ml-2" value="Cancelar" [routerLink]="['/']">
+    </form>
+</div>
